@@ -38,7 +38,12 @@ public class SuccessfulTests
     public void setSuiteVersion(ITestContext ctx) {
         if (ctx.getSuite().getAttribute("TEST_VERSION") == null) {
             if (++count % 2 == 1) {
-                ctx.getSuite().setAttribute("TEST_VERSION", "1." + count + "." + new Random().nextInt(50));
+                ctx.getSuite().setAttribute("TEST_VERSION", "1." + count + "." + new Random().nextInt(50) + " b.12345");
+            }
+        }
+        if (ctx.getSuite().getAttribute("RUN_DESCRIPTION") == null) {
+            if (count % 2 == 0) {
+                ctx.getSuite().setAttribute("RUN_DESCRIPTION", "Description of the suite that is very long and should word wrap I hope");
             }
         }
     }

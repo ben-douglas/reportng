@@ -17,6 +17,7 @@ td                       {font-size: 1.3em;}
 .totalLabel              {font-weight: bold; background-color: #ffffff;}
 
 .suite                   {background-color: #999999; font-weight: bold;}
+.suite_description       {background-color: #ffffff; font-weight: normal; font-size: 0.7em; padding-left: 20px;}
 .test                    {background-color: #eeeeee; padding-left: 2em;}
 .test .passed            {background-color: #88ee88;}
 .test .skipped           {background-color: #b3e6ff;}
@@ -44,7 +45,8 @@ td                       {font-size: 1.3em;}
 #sidebarHeader           {padding: 1.8em 1em; margin: 0 -1em 1.8em -1em;}
 #suites                  {line-height: 1.7em; border-spacing: 0.1em; width: 100%;}
 .tests                   {display: table-row-group;}
-.header.suite            {cursor: pointer; clear: right; height: 1.214em; margin-top: 1px;}
+.header.suite            {cursor: pointer; clear: right; margin-top: 1px; 1.214em;}
+.header.suite.version    {font-size: 0.7em; float: right; padding-left: 1px; padding-right: 1px; height: 1.5em;}
 div.test                 {margin-top: 0.1em; clear: right; font-size: 1.3em;}
 
 /* The +/- toggle used in the navigation frame. */
